@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("HIV_CARE.GraphQLAPIServices.ThienTTT")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9be293e43897a1e39961f0c200960d75c28508c7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6b72755b98389b8d1cd62bb126b7895fb1998caa")]
 [assembly: System.Reflection.AssemblyProductAttribute("HIV_CARE.GraphQLAPIServices.ThienTTT")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HIV_CARE.GraphQLAPIServices.ThienTTT")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

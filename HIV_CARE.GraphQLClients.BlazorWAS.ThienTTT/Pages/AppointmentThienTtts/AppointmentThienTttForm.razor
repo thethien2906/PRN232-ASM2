@@ -1,4 +1,5 @@
-﻿@page "/AppointmentThienTtts/AppointmentThienTttForm/{AppointmentId:int?}"
+﻿@page "/AppointmentThienTtts/AppointmentThienTttForm"
+@page "/AppointmentThienTtts/AppointmentThienTttForm/{AppointmentId:int?}"
 @using HIV_CARE.GraphQLClients.BlazorWAS.ThienTTT.Models
 @using HIV_CARE.GraphQLClients.BlazorWAS.ThienTTT.GraphQlClients
 @inject GraphQLConsumer _graphQLConsumer
@@ -10,26 +11,41 @@
 }
 else
 {
+    <div class="d-flex justify-content-between align-items-center mb-3">
+        <h3>📝 @(IsEditMode ? "Edit" : "Create") Appointment</h3>
+        <a href="/AppointmentThienTtts/AppointmentsThienTttList" class="btn btn-secondary">
+            <i class="bi bi-arrow-left"></i> Back to List
+        </a>
+    </div>
+
+    @if (showAlert)
+    {
+        <div class="alert alert-@alertType alert-dismissible fade show" role="alert">
+            @alertMessage
+            <button type="button" class="btn-close" @onclick="() => showAlert = false" aria-label="Close"></button>
+        </div>
+    }
+
     <EditForm Model="@Appointment" OnValidSubmit="async () => await SaveAppointment()">
         <DataAnnotationsValidator />
         <ValidationSummary />
 
         <div class="card shadow-sm rounded">
             <div class="card-header bg-primary text-white rounded-top-4">
-                <h4 class="mb-0">📝 Appointment Form</h4>
+                <h4 class="mb-0">📝 @(IsEditMode ? "Edit" : "Create New") Appointment</h4>
             </div>
 
             <div class="card-body bg-primary bg-opacity-25">
                 <div class="row g-3">
 
                     <div class="col-md-6">
-                        <label>Patient Name</label>
+                        <label class="form-label">Patient Name <span class="text-danger">*</span></label>
                         <InputText class="form-control" @bind-Value="Appointment.PatientName" />
                         <ValidationMessage For="@(() => Appointment.PatientName)" />
                     </div>
 
                     <div class="col-md-6">
-                        <label>Doctor</label>
+                        <label class="form-label">Doctor <span class="text-danger">*</span></label>
                         <InputSelect class="form-control" @bind-Value="Appointment.DoctorsPhatNhid">
                             <option value="0">-- Select Doctor --</option>
                             @foreach (var doctor in Doctors)
@@ -41,65 +57,99 @@ else
                     </div>
 
                     <div class="col-md-4">
-                        <label>Appointment Date</label>
+                        <label class="form-label">Appointment Date <span class="text-danger">*</span></label>
                         <InputDate class="form-control" @bind-Value="Appointment.AppointmentDate" />
                         <ValidationMessage For="@(() => Appointment.AppointmentDate)" />
                     </div>
 
                     <div class="col-md-4">
-                        <label>Appointment Time</label>
-                        @* This is the corrected line. It now binds to the string helper property. *@
+                        <label class="form-label">Appointment Time <span class="text-danger">*</span></label>
                         <InputText class="form-control" type="time" @bind-Value="AppointmentTimeString" />
                         <ValidationMessage For="@(() => Appointment.AppointmentTime)" />
                     </div>
 
                     <div class="col-md-4">
-                        <label>Consultation Type</label>
+                        <label class="form-label">Consultation Type</label>
                         <InputText class="form-control" @bind-Value="Appointment.ConsultationType" />
                         <ValidationMessage For="@(() => Appointment.ConsultationType)" />
                     </div>
 
                     <div class="col-md-4">
-                        <label>Status</label>
-                        <InputText class="form-control" @bind-Value="Appointment.Status" />
+                        <label class="form-label">Status</label>
+                        <InputSelect class="form-control" @bind-Value="Appointment.Status">
+                            <option value="">-- Select Status --</option>
+                            <option value="Scheduled">Scheduled</option>
+                            <option value="Confirmed">Confirmed</option>
+                            <option value="In Progress">In Progress</option>
+                            <option value="Completed">Completed</option>
+                            <option value="Cancelled">Cancelled</option>
+                            <option value="No Show">No Show</option>
+                        </InputSelect>
                         <ValidationMessage For="@(() => Appointment.Status)" />
                     </div>
 
                     <div class="col-md-4">
-                        <label>Estimated Duration (minutes)</label>
+                        <label class="form-label">Priority</label>
+                        <InputSelect class="form-control" @bind-Value="Appointment.Priority">
+                            <option value="1">1 - Low</option>
+                            <option value="2">2 - Normal</option>
+                            <option value="3">3 - High</option>
+                            <option value="4">4 - Urgent</option>
+                            <option value="5">5 - Emergency</option>
+                        </InputSelect>
+                        <ValidationMessage For="@(() => Appointment.Priority)" />
+                    </div>
+
+                    <div class="col-md-4">
+                        <label class="form-label">Estimated Duration (minutes)</label>
                         <InputNumber class="form-control" @bind-Value="Appointment.EstimatedDuration" />
                         <ValidationMessage For="@(() => Appointment.EstimatedDuration)" />
                     </div>
 
-                    <div class="col-md-4">
-                        <label>Total Fee</label>
+                    <div class="col-md-6">
+                        <label class="form-label">Total Fee</label>
                         <InputNumber class="form-control" @bind-Value="Appointment.TotalFee" />
                         <ValidationMessage For="@(() => Appointment.TotalFee)" />
                     </div>
 
                     <div class="col-12">
-                        <label>Notes</label>
-                        <InputTextArea class="form-control" @bind-Value="Appointment.Notes" />
+                        <label class="form-label">Notes</label>
+                        <InputTextArea class="form-control" rows="3" @bind-Value="Appointment.Notes" />
                         <ValidationMessage For="@(() => Appointment.Notes)" />
                     </div>
 
                     <div class="col-md-4">
-                        <label class="form-check-label">Is Confirmed</label>
-                        <InputCheckbox class="form-check-input" @bind-Value="Appointment.IsConfirmed" />
+                        <div class="form-check">
+                            <InputCheckbox class="form-check-input" @bind-Value="Appointment.IsConfirmed" />
+                            <label class="form-check-label">Is Confirmed</label>
+                        </div>
                     </div>
 
                     <div class="col-md-4">
-                        <label class="form-check-label">Is Completed</label>
-                        <InputCheckbox class="form-check-input" @bind-Value="Appointment.IsCompleted" />
+                        <div class="form-check">
+                            <InputCheckbox class="form-check-input" @bind-Value="Appointment.IsCompleted" />
+                            <label class="form-check-label">Is Completed</label>
+                        </div>
                     </div>
 
                     <div class="col-md-4">
-                        <label class="form-check-label">Is Anonymous</label>
-                        <InputCheckbox class="form-check-input" @bind-Value="Appointment.IsAnonymous" />
+                        <div class="form-check">
+                            <InputCheckbox class="form-check-input" @bind-Value="Appointment.IsAnonymous" />
+                            <label class="form-check-label">Is Anonymous</label>
+                        </div>
                     </div>
 
-                    <div class="col-12 d-flex justify-content-end">
-                        <button type="submit" class="btn btn-success">💾 Save</button>
+                    <div class="col-12 d-flex justify-content-end gap-2">
+                        <a href="/AppointmentThienTtts/AppointmentsThienTttList" class="btn btn-secondary">
+                            <i class="bi bi-x-circle"></i> Cancel
+                        </a>
+                        <button type="submit" class="btn btn-success" disabled="@isSaving">
+                            @if (isSaving)
+                            {
+                                <span class="spinner-border spinner-border-sm me-2" role="status"></span>
+                            }
+                            <i class="bi bi-save"></i> @(IsEditMode ? "Update" : "Create") Appointment
+                        </button>
                     </div>
                 </div>
             </div>
@@ -112,10 +162,14 @@ else
     public int? AppointmentId { get; set; }
 
     private List<DoctorPhatNh> Doctors = new();
-
     private AppointmentThienTtt Appointment;
+    private bool IsEditMode => AppointmentId.HasValue && AppointmentId.Value > 0;
+    private bool isSaving = false;
+    private bool showAlert = false;
+    private string alertMessage = "";
+    private string alertType = "success";
 
-    // This new helper property handles the conversion between TimeOnly and string.
+    // This helper property handles the conversion between TimeOnly and string.
     private string AppointmentTimeString
     {
         get => Appointment.AppointmentTime.ToString("HH:mm");
@@ -130,56 +184,136 @@ else
 
     protected override async Task OnInitializedAsync()
     {
-        // This now calls the method to fetch the doctors from the API.
-        Doctors = await _graphQLConsumer.GetDoctors();
+        await LoadDoctors();
+        await LoadAppointment();
+    }
 
-        if (AppointmentId.HasValue && AppointmentId.Value != 0)
+    private async Task LoadDoctors()
+    {
+        try
         {
-            Appointment = await _graphQLConsumer.GetAppointmentThienTttById(AppointmentId.Value);
+            Doctors = await _graphQLConsumer.GetDoctors();
         }
-        else
+        catch (Exception ex)
         {
-            var defaultValue = "SYSTEM_USER";
-            Appointment = new AppointmentThienTtt()
+            ShowAlert("Error loading doctors: " + ex.Message, "danger");
+            Console.WriteLine($"Error loading doctors: {ex.Message}");
+        }
+    }
+
+    private async Task LoadAppointment()
+    {
+        try
+        {
+            if (IsEditMode)
+            {
+                Appointment = await _graphQLConsumer.GetAppointmentThienTttById(AppointmentId.Value);
+                if (Appointment == null)
                 {
-                    AppointmentDate = DateTime.Today,
-                    AppointmentTime = new TimeOnly(9, 0, 0),
-                    Status = "Scheduled",
-                    CreatedBy = defaultValue,
-                    IsAnonymous = false,
-                    IsCompleted = false,
-                    IsConfirmed = false,
-                    Priority = 1
-                };
+                    ShowAlert("Appointment not found!", "danger");
+                    _navigationManager.NavigateTo("/AppointmentThienTtts/AppointmentsThienTttList");
+                    return;
+                }
+            }
+            else
+            {
+                var defaultValue = "SYSTEM_USER";
+                Appointment = new AppointmentThienTtt()
+                    {
+                        AppointmentDate = DateTime.Today,
+                        AppointmentTime = new TimeOnly(9, 0, 0),
+                        Status = "Scheduled",
+                        CreatedBy = defaultValue,
+                        IsAnonymous = false,
+                        IsCompleted = false,
+                        IsConfirmed = false,
+                        Priority = 2, // Normal priority
+                        EstimatedDuration = 30,
+                        TotalFee = 0,
+                        ConsultationType = "General Consultation"
+                    };
+            }
+        }
+        catch (Exception ex)
+        {
+            ShowAlert("Error loading appointment: " + ex.Message, "danger");
+            Console.WriteLine($"Error loading appointment: {ex.Message}");
         }
     }
 
     protected async Task SaveAppointment()
     {
+        if (isSaving) return;
+
+        isSaving = true;
         var result = 0;
-        AppointmentThienTtt existingItem = null;
 
-        if (AppointmentId.HasValue && AppointmentId.Value != 0)
+        try
         {
-            existingItem = await _graphQLConsumer.GetAppointmentThienTttById(AppointmentId.Value);
-        }
+            if (IsEditMode)
+            {
+                Appointment.ModifiedDate = DateTime.Now;
+                Appointment.ModifiedBy = "SYSTEM_USER";
+                result = await _graphQLConsumer.UpdateAppointmentThienTtt(Appointment);
 
-        if (existingItem != null)
-        {
-            Appointment.ModifiedDate = DateTime.Now;
-            Appointment.ModifiedBy = "SYSTEM_USER";
-            result = await _graphQLConsumer.UpdateAppointmentThienTtt(Appointment);
-        }
-        else
-        {
-            Appointment.CreatedDate = DateTime.Now;
-            Appointment.CreatedBy = "SYSTEM_USER";
-            result = await _graphQLConsumer.CreateAppointmentThienTtt(Appointment);
-        }
+                if (result > 0)
+                {
+                    ShowAlert("Appointment updated successfully!", "success");
+                    await Task.Delay(1500); // Show success message briefly
+                    _navigationManager.NavigateTo("/AppointmentThienTtts/AppointmentsThienTttList");
+                }
+                else
+                {
+                    ShowAlert("Failed to update appointment. Please try again.", "danger");
+                }
+            }
+            else
+            {
+                Appointment.CreatedDate = DateTime.Now;
+                Appointment.CreatedBy = "SYSTEM_USER";
+                result = await _graphQLConsumer.CreateAppointmentThienTtt(Appointment);
 
-        if (result > 0)
+                if (result > 0)
+                {
+                    ShowAlert("Appointment created successfully!", "success");
+                    await Task.Delay(1500); // Show success message briefly
+                    _navigationManager.NavigateTo("/AppointmentThienTtts/AppointmentsThienTttList");
+                }
+                else
+                {
+                    ShowAlert("Failed to create appointment. Please try again.", "danger");
+                }
+            }
+        }
+        catch (Exception ex)
         {
-            _navigationManager.NavigateTo("/appointments/list", false);
+            ShowAlert($"Error saving appointment: {ex.Message}", "danger");
+            Console.WriteLine($"Save error: {ex.Message}");
+        }
+        finally
+        {
+            isSaving = false;
+        }
+    }
+
+    private void ShowAlert(string message, string type)
+    {
+        alertMessage = message;
+        alertType = type;
+        showAlert = true;
+        StateHasChanged();
+
+        // Auto-hide alert after 5 seconds for non-error messages
+        if (type != "danger")
+        {
+            Task.Delay(5000).ContinueWith(_ =>
+            {
+                InvokeAsync(() =>
+                {
+                    showAlert = false;
+                    StateHasChanged();
+                });
+            });
         }
     }
 }

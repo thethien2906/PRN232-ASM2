@@ -1,1 +1,299 @@
-﻿@page "/AppointmentThienTtts/AppointmentThienTttEdit/{AppointmentId:int?}"
+﻿@page "/AppointmentThienTtts/AppointmentThienTttDetail/{AppointmentId:int}"
+@using HIV_CARE.GraphQLClients.BlazorWAS.ThienTTT.Models
+@using HIV_CARE.GraphQLClients.BlazorWAS.ThienTTT.GraphQlClients
+@inject GraphQLConsumer _graphQLConsumer
+@inject NavigationManager _navigationManager
+
+@if (appointment == null)
+{
+    <div class="d-flex justify-content-center align-items-center" style="min-height: 200px;">
+        <div class="spinner-border text-primary" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+        <span class="ms-2">Loading appointment details...</span>
+    </div>
+}
+else if (appointment.AppointmentsThienTttid == 0)
+{
+    <div class="alert alert-danger" role="alert">
+        <h4 class="alert-heading">Appointment Not Found!</h4>
+        <p>The requested appointment could not be found.</p>
+        <hr>
+        <p class="mb-0">
+            <a href="/AppointmentThienTtts/AppointmentsThienTttList" class="btn btn-primary">
+                <i class="bi bi-arrow-left"></i> Back to Appointments List
+            </a>
+        </p>
+    </div>
+}
+else
+{
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h3>📋 Appointment Details</h3>
+        <div class="btn-group" role="group">
+            <a href="/AppointmentThienTtts/AppointmentsThienTttList" class="btn btn-secondary">
+                <i class="bi bi-arrow-left"></i> Back to List
+            </a>
+            <a href="/AppointmentThienTtts/AppointmentThienTttForm/@appointment.AppointmentsThienTttid" class="btn btn-warning">
+                <i class="bi bi-pencil"></i> Edit
+            </a>
+        </div>
+    </div>
+
+    <div class="row">
+        <!-- Patient Information Card -->
+        <div class="col-lg-6 mb-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-header bg-info text-white">
+                    <h5 class="mb-0"><i class="bi bi-person-fill"></i> Patient Information</h5>
+                </div>
+                <div class="card-body">
+                    <div class="row g-3">
+                        <div class="col-12">
+                            <strong class="text-muted">Patient Name:</strong>
+                            <p class="mb-2 fs-5">@appointment.PatientName</p>
+                        </div>
+                        <div class="col-6">
+                            <strong class="text-muted">Appointment ID:</strong>
+                            <p class="mb-0">#@appointment.AppointmentsThienTttid</p>
+                        </div>
+                        <div class="col-6">
+                            <strong class="text-muted">Anonymous:</strong>
+                            <span class="badge @(appointment.IsAnonymous ? "bg-warning" : "bg-success")">
+                                @(appointment.IsAnonymous ? "Yes" : "No")
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Doctor Information Card -->
+        <div class="col-lg-6 mb-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-header bg-success text-white">
+                    <h5 class="mb-0"><i class="bi bi-person-badge"></i> Doctor Information</h5>
+                </div>
+                <div class="card-body">
+                    @if (appointment.DoctorsPhatNh != null)
+                    {
+                        <div class="row g-3">
+                            <div class="col-12">
+                                <strong class="text-muted">Doctor ID:</strong>
+                                <p class="mb-2">#@appointment.DoctorsPhatNh.DoctorsPhatNhid</p>
+                            </div>
+                            <div class="col-12">
+                                <strong class="text-muted">Specialization:</strong>
+                                <p class="mb-2 fs-6">@appointment.DoctorsPhatNh.Specialization</p>
+                            </div>
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="col-12">
+                            <strong class="text-muted">Doctor ID:</strong>
+                            <p class="mb-2">#@appointment.DoctorsPhatNhid</p>
+                            <small class="text-muted">Doctor details not available</small>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <!-- Appointment Schedule Card -->
+        <div class="col-lg-8 mb-4">
+            <div class="card shadow-sm">
+                <div class="card-header bg-primary text-white">
+                    <h5 class="mb-0"><i class="bi bi-calendar-event"></i> Appointment Schedule</h5>
+                </div>
+                <div class="card-body">
+                    <div class="row g-3">
+                        <div class="col-md-4">
+                            <strong class="text-muted">Date:</strong>
+                            <p class="mb-0 fs-6">@appointment.AppointmentDate.ToString("dddd, MMMM dd, yyyy")</p>
+                        </div>
+                        <div class="col-md-4">
+                            <strong class="text-muted">Time:</strong>
+                            <p class="mb-0 fs-6">@appointment.AppointmentTime.ToString("HH:mm")</p>
+                        </div>
+                        <div class="col-md-4">
+                            <strong class="text-muted">Duration:</strong>
+                            <p class="mb-0">@appointment.EstimatedDuration minutes</p>
+                        </div>
+                        <div class="col-md-6">
+                            <strong class="text-muted">Consultation Type:</strong>
+                            <p class="mb-0">@appointment.ConsultationType</p>
+                        </div>
+                        <div class="col-md-6">
+                            <strong class="text-muted">Priority:</strong>
+                            <span class="badge @GetPriorityBadgeClass(appointment.Priority)">
+                                @GetPriorityText(appointment.Priority)
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Status & Financial Card -->
+        <div class="col-lg-4 mb-4">
+            <div class="card shadow-sm">
+                <div class="card-header bg-warning text-dark">
+                    <h5 class="mb-0"><i class="bi bi-check-circle"></i> Status & Payment</h5>
+                </div>
+                <div class="card-body">
+                    <div class="row g-3">
+                        <div class="col-12">
+                            <strong class="text-muted">Status:</strong>
+                            <p class="mb-2">
+                                <span class="badge @GetStatusBadgeClass(appointment.Status)">
+                                    @appointment.Status
+                                </span>
+                            </p>
+                        </div>
+                        <div class="col-12">
+                            <strong class="text-muted">Total Fee:</strong>
+                            <p class="mb-2 fs-5 text-danger fw-bold">@appointment.TotalFee.ToString("C")</p>
+                        </div>
+                        <div class="col-6">
+                            <strong class="text-muted">Confirmed:</strong>
+                            <p class="mb-0">
+                                <span class="badge @(appointment.IsConfirmed ? "bg-success" : "bg-secondary")">
+                                    @(appointment.IsConfirmed ? "Yes" : "No")
+                                </span>
+                            </p>
+                        </div>
+                        <div class="col-6">
+                            <strong class="text-muted">Completed:</strong>
+                            <p class="mb-0">
+                                <span class="badge @(appointment.IsCompleted ? "bg-success" : "bg-secondary")">
+                                    @(appointment.IsCompleted ? "Yes" : "No")
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Notes Card -->
+    @if (!string.IsNullOrWhiteSpace(appointment.Notes))
+    {
+        <div class="row">
+            <div class="col-12 mb-4">
+                <div class="card shadow-sm">
+                    <div class="card-header bg-secondary text-white">
+                        <h5 class="mb-0"><i class="bi bi-sticky"></i> Notes</h5>
+                    </div>
+                    <div class="card-body">
+                        <p class="mb-0" style="white-space: pre-wrap;">@appointment.Notes</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+
+    <!-- Metadata Card -->
+    <div class="row">
+        <div class="col-12">
+            <div class="card shadow-sm">
+                <div class="card-header bg-light text-dark">
+                    <h6 class="mb-0"><i class="bi bi-info-circle"></i> Record Information</h6>
+                </div>
+                <div class="card-body">
+                    <div class="row g-3 small text-muted">
+                        <div class="col-md-3">
+                            <strong>Created Date:</strong>
+                            <p class="mb-0">@(appointment.CreatedDate?.ToString("dd/MM/yyyy HH:mm") ?? "N/A")</p>
+                        </div>
+                        <div class="col-md-3">
+                            <strong>Created By:</strong>
+                            <p class="mb-0">@(appointment.CreatedBy ?? "N/A")</p>
+                        </div>
+                        <div class="col-md-3">
+                            <strong>Modified Date:</strong>
+                            <p class="mb-0">@(appointment.ModifiedDate?.ToString("dd/MM/yyyy HH:mm") ?? "N/A")</p>
+                        </div>
+                        <div class="col-md-3">
+                            <strong>Modified By:</strong>
+                            <p class="mb-0">@(appointment.ModifiedBy ?? "N/A")</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+@code {
+    [Parameter]
+    public int AppointmentId { get; set; }
+
+    private AppointmentThienTtt appointment;
+
+    protected override async Task OnInitializedAsync()
+    {
+        await LoadAppointment();
+    }
+
+    private async Task LoadAppointment()
+    {
+        try
+        {
+            appointment = await _graphQLConsumer.GetAppointmentThienTttById(AppointmentId);
+
+            if (appointment == null)
+            {
+                appointment = new AppointmentThienTtt(); // Empty object to show "not found" message
+            }
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error loading appointment: {ex.Message}");
+            appointment = new AppointmentThienTtt(); // Empty object to show "not found" message
+        }
+    }
+
+    private string GetPriorityBadgeClass(int priority)
+    {
+        return priority switch
+        {
+            1 => "bg-success",      // Low - Green
+            2 => "bg-info",         // Normal - Blue
+            3 => "bg-warning",      // High - Yellow
+            4 => "bg-danger",       // Urgent - Red
+            5 => "bg-dark",         // Emergency - Dark
+            _ => "bg-secondary"     // Unknown - Gray
+        };
+    }
+
+    private string GetPriorityText(int priority)
+    {
+        return priority switch
+        {
+            1 => "Low",
+            2 => "Normal",
+            3 => "High",
+            4 => "Urgent",
+            5 => "Emergency",
+            _ => "Unknown"
+        };
+    }
+
+    private string GetStatusBadgeClass(string status)
+    {
+        return status?.ToLower() switch
+        {
+            "scheduled" => "bg-info",
+            "confirmed" => "bg-primary",
+            "in progress" => "bg-warning text-dark",
+            "completed" => "bg-success",
+            "cancelled" => "bg-danger",
+            "no show" => "bg-secondary",
+            _ => "bg-secondary"
+        };
+    }
+}
