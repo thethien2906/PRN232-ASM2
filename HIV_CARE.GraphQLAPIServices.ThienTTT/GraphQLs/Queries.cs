@@ -37,7 +37,7 @@ namespace HIV_CARE.GraphQLAPIServices.ThienTTT.GraphQLs
             }
 
         }
-        public async Task<List<DoctorPhatNh>> GetDocterPhatNhs()
+        public async Task<List<DoctorPhatNh>> GetDoctorsPhatNhs()
         {
             try
             {
