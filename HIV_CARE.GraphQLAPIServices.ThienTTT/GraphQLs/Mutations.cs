@@ -22,9 +22,9 @@ namespace HIV_CARE.GraphQLAPIServices.ThienTTT.GraphQLs
             }
             catch (Exception ex)
             {
+                Console.WriteLine(ex.Message);
+                return 0;
             }
-
-            return 0;
         }
 
         public async Task<int> UpdateAppointmentThienTtt(AppointmentThienTtt appointmentThienTtt)
@@ -37,10 +37,9 @@ namespace HIV_CARE.GraphQLAPIServices.ThienTTT.GraphQLs
             }
             catch (Exception ex)
             {
-
+                Console.WriteLine(ex.Message);
+                return 0;
             }
-
-            return 0;
         }
 
         public async Task<bool> DeleteAppointmentThienTtt(int id)
@@ -53,9 +52,9 @@ namespace HIV_CARE.GraphQLAPIServices.ThienTTT.GraphQLs
             }
             catch (Exception ex)
             {
+                Console.WriteLine(ex.Message);
+                return false;
             }
-
-            return false;
         }
     }
 }

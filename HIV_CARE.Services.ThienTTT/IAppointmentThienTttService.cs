@@ -16,8 +16,8 @@ namespace HIV_CARE.Services.ThienTTT
 
         Task<List<AppointmentThienTtt>> SearchAsync(int id, DateTime date, int doctorId, int currentPage, int pageSize);
 
-        Task<int> CreateAsync(AppointmentThienTtt AppointmentThienTtt);
-        Task<int> UpdateAsync(AppointmentThienTtt AppointmentThienTtt);
+        Task<int> CreateAsync(AppointmentThienTtt appointmentThienTtt);
+        Task<int> UpdateAsync(AppointmentThienTtt appointmentThienTtt);
         Task<bool> DeleteAsync(int id);
     }
 }
