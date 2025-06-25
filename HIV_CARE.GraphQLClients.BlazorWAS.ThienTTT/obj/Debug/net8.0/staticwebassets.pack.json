@@ -1,0 +1,65 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\FPT\\PRN232\\Sauce\\ASM2\\SU25_PRN232_SE1725_ASM2_SE182476_ThienTTT\\HIV_CARE.GraphQLClients.BlazorWAS.ThienTTT\\bin\\Debug\\net8.0\\wwwroot\\_framework\\blazor.webassembly.js",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js"
+    },
+    {
+      "Id": "C:\\FPT\\PRN232\\Sauce\\ASM2\\SU25_PRN232_SE1725_ASM2_SE182476_ThienTTT\\HIV_CARE.GraphQLClients.BlazorWAS.ThienTTT\\obj\\Debug\\net8.0\\compressed\\dndepb6oo2.gz",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js.gz"
+    },
+    {
+      "Id": "C:\\FPT\\PRN232\\Sauce\\ASM2\\SU25_PRN232_SE1725_ASM2_SE182476_ThienTTT\\HIV_CARE.GraphQLClients.BlazorWAS.ThienTTT\\obj\\Debug\\net8.0\\scopedcss\\bundle\\HIV_CARE.GraphQLClients.BlazorWAS.ThienTTT.styles.css",
+      "PackagePath": "staticwebassets\\HIV_CARE.GraphQLClients.BlazorWAS.ThienTTT.styles.css"
+    },
+    {
+      "Id": "C:\\FPT\\PRN232\\Sauce\\ASM2\\SU25_PRN232_SE1725_ASM2_SE182476_ThienTTT\\HIV_CARE.GraphQLClients.BlazorWAS.ThienTTT\\wwwroot\\appsettings.json",
+      "PackagePath": "staticwebassets\\appsettings.json"
+    },
+    {
+      "Id": "C:\\FPT\\PRN232\\Sauce\\ASM2\\SU25_PRN232_SE1725_ASM2_SE182476_ThienTTT\\HIV_CARE.GraphQLClients.BlazorWAS.ThienTTT\\wwwroot\\css\\app.css",
+      "PackagePath": "staticwebassets\\css\\app.css"
+    },
+    {
+      "Id": "C:\\FPT\\PRN232\\Sauce\\ASM2\\SU25_PRN232_SE1725_ASM2_SE182476_ThienTTT\\HIV_CARE.GraphQLClients.BlazorWAS.ThienTTT\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\FPT\\PRN232\\Sauce\\ASM2\\SU25_PRN232_SE1725_ASM2_SE182476_ThienTTT\\HIV_CARE.GraphQLClients.BlazorWAS.ThienTTT\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\FPT\\PRN232\\Sauce\\ASM2\\SU25_PRN232_SE1725_ASM2_SE182476_ThienTTT\\HIV_CARE.GraphQLClients.BlazorWAS.ThienTTT\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "C:\\FPT\\PRN232\\Sauce\\ASM2\\SU25_PRN232_SE1725_ASM2_SE182476_ThienTTT\\HIV_CARE.GraphQLClients.BlazorWAS.ThienTTT\\wwwroot\\icon-192.png",
+      "PackagePath": "staticwebassets\\icon-192.png"
+    },
+    {
+      "Id": "C:\\FPT\\PRN232\\Sauce\\ASM2\\SU25_PRN232_SE1725_ASM2_SE182476_ThienTTT\\HIV_CARE.GraphQLClients.BlazorWAS.ThienTTT\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "C:\\FPT\\PRN232\\Sauce\\ASM2\\SU25_PRN232_SE1725_ASM2_SE182476_ThienTTT\\HIV_CARE.GraphQLClients.BlazorWAS.ThienTTT\\wwwroot\\sample-data\\weather.json",
+      "PackagePath": "staticwebassets\\sample-data\\weather.json"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.HIV_CARE.GraphQLClients.BlazorWAS.ThienTTT.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.HIV_CARE.GraphQLClients.BlazorWAS.ThienTTT.props",
+      "PackagePath": "build\\HIV_CARE.GraphQLClients.BlazorWAS.ThienTTT.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.HIV_CARE.GraphQLClients.BlazorWAS.ThienTTT.props",
+      "PackagePath": "buildMultiTargeting\\HIV_CARE.GraphQLClients.BlazorWAS.ThienTTT.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.HIV_CARE.GraphQLClients.BlazorWAS.ThienTTT.props",
+      "PackagePath": "buildTransitive\\HIV_CARE.GraphQLClients.BlazorWAS.ThienTTT.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

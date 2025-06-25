@@ -1,0 +1,13 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = HIV_CARE.Services.ThienTTT
+build_property.ProjectDir = C:\FPT\PRN232\Sauce\ASM2\SU25_PRN232_SE1725_ASM2_SE182476_ThienTTT\HIV_CARE.Services.ThienTTT\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 

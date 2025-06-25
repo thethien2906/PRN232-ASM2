@@ -1,0 +1,78 @@
+﻿@page "/AppointmentsThienTtts/AppointmentsThienTttList"
+
+@using HIV_CARE.GraphQLClients.BlazorWAS.ThienTTT.Models
+@using HIV_CARE.GraphQLClients.BlazorWAS.ThienTTT.GraphQlClients
+
+@inject GraphQLConsumer _graphQLConsumer
+
+@if (appointmentThienTtts == null)
+{
+    <div>Page loading...</div>
+}
+else
+{
+    <table class="table table-striped table-bordered table-hover">
+        <thead class="bg-primary text-white">
+            <tr>
+                <th>Patient Name</th>
+                <th>Date</th>
+                <th>Time</th>
+                <th>Type</th>
+                <th>Priority</th>
+                <th>Confirmed</th>
+                <th>Completed</th>
+                <th>Anonymous</th>
+                <th>Total Fee</th>
+                <th>Status</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody class="table-light">
+            @foreach (var appointment in appointmentThienTtts)
+            {
+                <tr>
+                    <td>@appointment.PatientName</td>
+                    <td>@appointment.AppointmentDate.ToString("dd/MM/yyyy")</td>
+                    <td>@appointment.AppointmentTime.ToString("hh\\:mm")</td>
+                    <td>@appointment.ConsultationType</td>
+                    <td class="text-center">@appointment.Priority</td>
+                    <td class="text-center">@((appointment.IsConfirmed) ? "Yes" : "No")</td>
+                    <td class="text-center">@((appointment.IsCompleted) ? "Yes" : "No")</td>
+                    <td class="text-center">@((appointment.IsAnonymous) ? "Yes" : "No")</td>
+                    <td class="text-end text-danger">@appointment.TotalFee.ToString("N0")</td>
+                    <td>@appointment.Status</td>
+                    <td>
+                        <div class="btn-group" role="group">
+                            <a href="/AppointmentsThienTtts/Detail/@appointment.AppointmentsThienTttid" class="btn btn-sm btn-primary">Detail</a>
+                            <a href="/AppointmentsThienTtts/Form/@appointment.AppointmentsThienTttid" class="btn btn-sm btn-warning">Edit</a>
+                        </div>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+    private List<AppointmentThienTtt> appointmentThienTtts;
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            appointmentThienTtts = await _graphQLConsumer.GetAppointmentTtts();
+
+            // Add debugging
+            Console.WriteLine($"Retrieved {appointmentThienTtts?.Count ?? 0} appointments");
+            if (appointmentThienTtts?.Any() == true)
+            {
+                Console.WriteLine($"First appointment: {appointmentThienTtts.First().PatientName}");
+            }
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine("Error: " + ex.Message);
+            appointmentThienTtts = new List<AppointmentThienTtt>();
+        }
+    }
+}

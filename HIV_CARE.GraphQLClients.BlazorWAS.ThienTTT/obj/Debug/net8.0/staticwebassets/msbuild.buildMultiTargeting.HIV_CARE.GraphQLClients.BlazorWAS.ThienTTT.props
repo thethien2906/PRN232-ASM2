@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\HIV_CARE.GraphQLClients.BlazorWAS.ThienTTT.props" />
+</Project>

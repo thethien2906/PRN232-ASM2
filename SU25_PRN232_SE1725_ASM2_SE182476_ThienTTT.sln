@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34728.123
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HIV_CARE.Repositories.ThienTTT", "HIV_CARE.Repositories.ThienTTT\HIV_CARE.Repositories.ThienTTT.csproj", "{75E468DE-3A48-49FC-BBAD-1D36DEDD1515}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HIV_CARE.Services.ThienTTT", "HIV_CARE.Services.ThienTTT\HIV_CARE.Services.ThienTTT.csproj", "{D72D2558-BECF-4913-8ACD-639E88EFE9CE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HIV_CARE.GraphQLAPIServices.ThienTTT", "HIV_CARE.GraphQLAPIServices.ThienTTT\HIV_CARE.GraphQLAPIServices.ThienTTT.csproj", "{B7AC667D-5B8B-4AA5-9E90-4133C09FEF96}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HIV_CARE.GraphQLClients.BlazorWAS.ThienTTT", "HIV_CARE.GraphQLClients.BlazorWAS.ThienTTT\HIV_CARE.GraphQLClients.BlazorWAS.ThienTTT.csproj", "{0182674E-B9FA-4A2C-BD99-259EB3CC2AD9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{75E468DE-3A48-49FC-BBAD-1D36DEDD1515}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75E468DE-3A48-49FC-BBAD-1D36DEDD1515}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75E468DE-3A48-49FC-BBAD-1D36DEDD1515}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75E468DE-3A48-49FC-BBAD-1D36DEDD1515}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D72D2558-BECF-4913-8ACD-639E88EFE9CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D72D2558-BECF-4913-8ACD-639E88EFE9CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D72D2558-BECF-4913-8ACD-639E88EFE9CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D72D2558-BECF-4913-8ACD-639E88EFE9CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7AC667D-5B8B-4AA5-9E90-4133C09FEF96}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7AC667D-5B8B-4AA5-9E90-4133C09FEF96}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7AC667D-5B8B-4AA5-9E90-4133C09FEF96}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7AC667D-5B8B-4AA5-9E90-4133C09FEF96}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0182674E-B9FA-4A2C-BD99-259EB3CC2AD9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0182674E-B9FA-4A2C-BD99-259EB3CC2AD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0182674E-B9FA-4A2C-BD99-259EB3CC2AD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0182674E-B9FA-4A2C-BD99-259EB3CC2AD9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C8A4F5A0-7A30-4BA8-97CC-0594C4BB57E0}
+	EndGlobalSection
+EndGlobal
