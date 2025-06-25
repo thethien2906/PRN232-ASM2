@@ -37,5 +37,17 @@ namespace HIV_CARE.GraphQLAPIServices.ThienTTT.GraphQLs
             }
 
         }
+        public async Task<List<DoctorPhatNh>> GetDocterPhatNhs()
+        {
+            try
+            {
+                var result = await _serviceProvider.DoctorPhatNhService.GetAllAsync();
+                return result ?? new List<DoctorPhatNh>();
+            }
+            catch (Exception ex)
+            {
+                return new List<DoctorPhatNh>();
+            }
+        }
     }
 }

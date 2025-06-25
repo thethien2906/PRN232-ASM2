@@ -1,1 +1,185 @@
-﻿z
+﻿@page "/AppointmentThienTtts/AppointmentThienTttForm/{AppointmentId:int?}"
+@using HIV_CARE.GraphQLClients.BlazorWAS.ThienTTT.Models
+@using HIV_CARE.GraphQLClients.BlazorWAS.ThienTTT.GraphQlClients
+@inject GraphQLConsumer _graphQLConsumer
+@inject NavigationManager _navigationManager
+
+@if (Appointment == null)
+{
+    <div>Page loading...</div>
+}
+else
+{
+    <EditForm Model="@Appointment" OnValidSubmit="async () => await SaveAppointment()">
+        <DataAnnotationsValidator />
+        <ValidationSummary />
+
+        <div class="card shadow-sm rounded">
+            <div class="card-header bg-primary text-white rounded-top-4">
+                <h4 class="mb-0">📝 Appointment Form</h4>
+            </div>
+
+            <div class="card-body bg-primary bg-opacity-25">
+                <div class="row g-3">
+
+                    <div class="col-md-6">
+                        <label>Patient Name</label>
+                        <InputText class="form-control" @bind-Value="Appointment.PatientName" />
+                        <ValidationMessage For="@(() => Appointment.PatientName)" />
+                    </div>
+
+                    <div class="col-md-6">
+                        <label>Doctor</label>
+                        <InputSelect class="form-control" @bind-Value="Appointment.DoctorsPhatNhid">
+                            <option value="0">-- Select Doctor --</option>
+                            @foreach (var doctor in Doctors)
+                            {
+                                <option value="@doctor.DoctorsPhatNhid">@string.Format("{0} (ID: {1})", doctor.Specialization, doctor.DoctorsPhatNhid)</option>
+                            }
+                        </InputSelect>
+                        <ValidationMessage For="@(() => Appointment.DoctorsPhatNhid)" />
+                    </div>
+
+                    <div class="col-md-4">
+                        <label>Appointment Date</label>
+                        <InputDate class="form-control" @bind-Value="Appointment.AppointmentDate" />
+                        <ValidationMessage For="@(() => Appointment.AppointmentDate)" />
+                    </div>
+
+                    <div class="col-md-4">
+                        <label>Appointment Time</label>
+                        @* This is the corrected line. It now binds to the string helper property. *@
+                        <InputText class="form-control" type="time" @bind-Value="AppointmentTimeString" />
+                        <ValidationMessage For="@(() => Appointment.AppointmentTime)" />
+                    </div>
+
+                    <div class="col-md-4">
+                        <label>Consultation Type</label>
+                        <InputText class="form-control" @bind-Value="Appointment.ConsultationType" />
+                        <ValidationMessage For="@(() => Appointment.ConsultationType)" />
+                    </div>
+
+                    <div class="col-md-4">
+                        <label>Status</label>
+                        <InputText class="form-control" @bind-Value="Appointment.Status" />
+                        <ValidationMessage For="@(() => Appointment.Status)" />
+                    </div>
+
+                    <div class="col-md-4">
+                        <label>Estimated Duration (minutes)</label>
+                        <InputNumber class="form-control" @bind-Value="Appointment.EstimatedDuration" />
+                        <ValidationMessage For="@(() => Appointment.EstimatedDuration)" />
+                    </div>
+
+                    <div class="col-md-4">
+                        <label>Total Fee</label>
+                        <InputNumber class="form-control" @bind-Value="Appointment.TotalFee" />
+                        <ValidationMessage For="@(() => Appointment.TotalFee)" />
+                    </div>
+
+                    <div class="col-12">
+                        <label>Notes</label>
+                        <InputTextArea class="form-control" @bind-Value="Appointment.Notes" />
+                        <ValidationMessage For="@(() => Appointment.Notes)" />
+                    </div>
+
+                    <div class="col-md-4">
+                        <label class="form-check-label">Is Confirmed</label>
+                        <InputCheckbox class="form-check-input" @bind-Value="Appointment.IsConfirmed" />
+                    </div>
+
+                    <div class="col-md-4">
+                        <label class="form-check-label">Is Completed</label>
+                        <InputCheckbox class="form-check-input" @bind-Value="Appointment.IsCompleted" />
+                    </div>
+
+                    <div class="col-md-4">
+                        <label class="form-check-label">Is Anonymous</label>
+                        <InputCheckbox class="form-check-input" @bind-Value="Appointment.IsAnonymous" />
+                    </div>
+
+                    <div class="col-12 d-flex justify-content-end">
+                        <button type="submit" class="btn btn-success">💾 Save</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </EditForm>
+}
+
+@code {
+    [Parameter]
+    public int? AppointmentId { get; set; }
+
+    private List<DoctorPhatNh> Doctors = new();
+
+    private AppointmentThienTtt Appointment;
+
+    // This new helper property handles the conversion between TimeOnly and string.
+    private string AppointmentTimeString
+    {
+        get => Appointment.AppointmentTime.ToString("HH:mm");
+        set
+        {
+            if (TimeOnly.TryParse(value, out var time))
+            {
+                Appointment.AppointmentTime = time;
+            }
+        }
+    }
+
+    protected override async Task OnInitializedAsync()
+    {
+        // This now calls the method to fetch the doctors from the API.
+        Doctors = await _graphQLConsumer.GetDoctors();
+
+        if (AppointmentId.HasValue && AppointmentId.Value != 0)
+        {
+            Appointment = await _graphQLConsumer.GetAppointmentThienTttById(AppointmentId.Value);
+        }
+        else
+        {
+            var defaultValue = "SYSTEM_USER";
+            Appointment = new AppointmentThienTtt()
+                {
+                    AppointmentDate = DateTime.Today,
+                    AppointmentTime = new TimeOnly(9, 0, 0),
+                    Status = "Scheduled",
+                    CreatedBy = defaultValue,
+                    IsAnonymous = false,
+                    IsCompleted = false,
+                    IsConfirmed = false,
+                    Priority = 1
+                };
+        }
+    }
+
+    protected async Task SaveAppointment()
+    {
+        var result = 0;
+        AppointmentThienTtt existingItem = null;
+
+        if (AppointmentId.HasValue && AppointmentId.Value != 0)
+        {
+            existingItem = await _graphQLConsumer.GetAppointmentThienTttById(AppointmentId.Value);
+        }
+
+        if (existingItem != null)
+        {
+            Appointment.ModifiedDate = DateTime.Now;
+            Appointment.ModifiedBy = "SYSTEM_USER";
+            result = await _graphQLConsumer.UpdateAppointmentThienTtt(Appointment);
+        }
+        else
+        {
+            Appointment.CreatedDate = DateTime.Now;
+            Appointment.CreatedBy = "SYSTEM_USER";
+            result = await _graphQLConsumer.CreateAppointmentThienTtt(Appointment);
+        }
+
+        if (result > 0)
+        {
+            _navigationManager.NavigateTo("/appointments/list", false);
+        }
+    }
+}

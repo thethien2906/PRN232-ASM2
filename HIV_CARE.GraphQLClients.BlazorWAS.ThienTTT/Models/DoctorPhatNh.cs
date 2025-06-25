@@ -40,4 +40,10 @@ public partial class DoctorPhatNh
     public bool IsActive { get; set; }
 
     public virtual ICollection<AppointmentThienTtt> AppointmentThienTtts { get; set; } = new List<AppointmentThienTtt>();
+
+    public class DoctorsPhatNhsGraphQLResponse
+    {
+        public List<DoctorPhatNh> doctorsPhatNhs { get; set; }
+    }
+
 }

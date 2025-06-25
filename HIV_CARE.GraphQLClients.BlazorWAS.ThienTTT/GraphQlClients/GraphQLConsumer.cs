@@ -2,6 +2,7 @@
 using GraphQL.Client.Abstractions;
 using HIV_CARE.GraphQLClients.BlazorWAS.ThienTTT.Models;
 using static HIV_CARE.GraphQLClients.BlazorWAS.ThienTTT.Models.AppointmentThienTtt;
+using static HIV_CARE.GraphQLClients.BlazorWAS.ThienTTT.Models.DoctorPhatNh;
 
 
 namespace HIV_CARE.GraphQLClients.BlazorWAS.ThienTTT.GraphQlClients
@@ -156,6 +157,26 @@ namespace HIV_CARE.GraphQLClients.BlazorWAS.ThienTTT.GraphQlClients
             {
                 Console.WriteLine($"Error deleting appointment: {ex.Message}");
                 return false; 
+            }
+        }
+        public async Task<List<DoctorPhatNh>> GetDoctors()
+        {
+            try
+            {
+                var query = @"query getDoctors {
+                                doctorsPhatNhs {
+                                    doctorsPhatNhid
+                                    specialization
+                                }
+                            }";
+
+                var response = await _graphQLClient.SendQueryAsync<DoctorsPhatNhsGraphQLResponse>(query);
+                return response?.Data?.doctorsPhatNhs ?? new List<DoctorPhatNh>();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error fetching doctors: {ex.Message}");
+                return new List<DoctorPhatNh>();
             }
         }
     }
