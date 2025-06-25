@@ -1,4 +1,6 @@
-﻿#nullable disable
+﻿// HIV_CARE.GraphQLClients.BlazorWAS.ThienTTT/Models/AppointmentThienTtt.cs
+
+#nullable disable
 using System;
 using System.Collections.Generic;
 

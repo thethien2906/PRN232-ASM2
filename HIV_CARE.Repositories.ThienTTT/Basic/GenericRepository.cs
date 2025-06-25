@@ -1,4 +1,5 @@
-﻿using HIV_CARE.Repositories.ThienTTT.DBContext;
+﻿// Basic/GenericRepository.cs
+using HIV_CARE.Repositories.ThienTTT.DBContext;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;

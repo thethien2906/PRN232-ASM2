@@ -1,4 +1,5 @@
-﻿using HIV_CARE.Repositories.ThienTTT.Basic;
+﻿// DoctorPhatNhRepository.cs
+using HIV_CARE.Repositories.ThienTTT.Basic;
 using HIV_CARE.Repositories.ThienTTT.Models;
 using Microsoft.EntityFrameworkCore;
 using System;

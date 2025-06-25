@@ -1,4 +1,5 @@
-﻿using HIV_CARE.Repositories.ThienTTT.Models;
+﻿// GraphQLs/Queries.cs
+using HIV_CARE.Repositories.ThienTTT.Models;
 using HIV_CARE.Services.ThienTTT;
 
 namespace HIV_CARE.GraphQLAPIServices.ThienTTT.GraphQLs

@@ -1,4 +1,5 @@
-﻿using HIV_CARE.Repositories.ThienTTT.Models;
+﻿// IAppointmentThienTttService.cs
+using HIV_CARE.Repositories.ThienTTT.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
