@@ -3,16 +3,36 @@
   "WorkspaceRootPath": "C:\\FPT\\PRN232\\Sauce\\ASM2\\SU25_PRN232_SE1725_ASM2_SE182476_ThienTTT\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0182674E-B9FA-4A2C-BD99-259EB3CC2AD9}|HIV_CARE.GraphQLClients.BlazorWAS.ThienTTT\\HIV_CARE.GraphQLClients.BlazorWAS.ThienTTT.csproj|c:\\fpt\\prn232\\sauce\\asm2\\su25_prn232_se1725_asm2_se182476_thienttt\\hiv_care.graphqlclients.blazorwas.thienttt\\models\\appointmentthienttt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0182674E-B9FA-4A2C-BD99-259EB3CC2AD9}|HIV_CARE.GraphQLClients.BlazorWAS.ThienTTT\\HIV_CARE.GraphQLClients.BlazorWAS.ThienTTT.csproj|solutionrelative:hiv_care.graphqlclients.blazorwas.thienttt\\models\\appointmentthienttt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B7AC667D-5B8B-4AA5-9E90-4133C09FEF96}|HIV_CARE.GraphQLAPIServices.ThienTTT\\HIV_CARE.GraphQLAPIServices.ThienTTT.csproj|c:\\fpt\\prn232\\sauce\\asm2\\su25_prn232_se1725_asm2_se182476_thienttt\\hiv_care.graphqlapiservices.thienttt\\graphqls\\queries.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7AC667D-5B8B-4AA5-9E90-4133C09FEF96}|HIV_CARE.GraphQLAPIServices.ThienTTT\\HIV_CARE.GraphQLAPIServices.ThienTTT.csproj|solutionrelative:hiv_care.graphqlapiservices.thienttt\\graphqls\\queries.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D72D2558-BECF-4913-8ACD-639E88EFE9CE}|HIV_CARE.Services.ThienTTT\\HIV_CARE.Services.ThienTTT.csproj|c:\\fpt\\prn232\\sauce\\asm2\\su25_prn232_se1725_asm2_se182476_thienttt\\hiv_care.services.thienttt\\iappointmentthientttservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D72D2558-BECF-4913-8ACD-639E88EFE9CE}|HIV_CARE.Services.ThienTTT\\HIV_CARE.Services.ThienTTT.csproj|solutionrelative:hiv_care.services.thienttt\\iappointmentthientttservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0182674E-B9FA-4A2C-BD99-259EB3CC2AD9}|HIV_CARE.GraphQLClients.BlazorWAS.ThienTTT\\HIV_CARE.GraphQLClients.BlazorWAS.ThienTTT.csproj|c:\\fpt\\prn232\\sauce\\asm2\\su25_prn232_se1725_asm2_se182476_thienttt\\hiv_care.graphqlclients.blazorwas.thienttt\\graphqlclients\\graphqlconsumer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0182674E-B9FA-4A2C-BD99-259EB3CC2AD9}|HIV_CARE.GraphQLClients.BlazorWAS.ThienTTT\\HIV_CARE.GraphQLClients.BlazorWAS.ThienTTT.csproj|solutionrelative:hiv_care.graphqlclients.blazorwas.thienttt\\graphqlclients\\graphqlconsumer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B7AC667D-5B8B-4AA5-9E90-4133C09FEF96}|HIV_CARE.GraphQLAPIServices.ThienTTT\\HIV_CARE.GraphQLAPIServices.ThienTTT.csproj|c:\\fpt\\prn232\\sauce\\asm2\\su25_prn232_se1725_asm2_se182476_thienttt\\hiv_care.graphqlapiservices.thienttt\\graphqls\\queries.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B7AC667D-5B8B-4AA5-9E90-4133C09FEF96}|HIV_CARE.GraphQLAPIServices.ThienTTT\\HIV_CARE.GraphQLAPIServices.ThienTTT.csproj|solutionrelative:hiv_care.graphqlapiservices.thienttt\\graphqls\\queries.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0182674E-B9FA-4A2C-BD99-259EB3CC2AD9}|HIV_CARE.GraphQLClients.BlazorWAS.ThienTTT\\HIV_CARE.GraphQLClients.BlazorWAS.ThienTTT.csproj|c:\\fpt\\prn232\\sauce\\asm2\\su25_prn232_se1725_asm2_se182476_thienttt\\hiv_care.graphqlclients.blazorwas.thienttt\\models\\appointmentthienttt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0182674E-B9FA-4A2C-BD99-259EB3CC2AD9}|HIV_CARE.GraphQLClients.BlazorWAS.ThienTTT\\HIV_CARE.GraphQLClients.BlazorWAS.ThienTTT.csproj|solutionrelative:hiv_care.graphqlclients.blazorwas.thienttt\\models\\appointmentthienttt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75E468DE-3A48-49FC-BBAD-1D36DEDD1515}|HIV_CARE.Repositories.ThienTTT\\HIV_CARE.Repositories.ThienTTT.csproj|c:\\fpt\\prn232\\sauce\\asm2\\su25_prn232_se1725_asm2_se182476_thienttt\\hiv_care.repositories.thienttt\\models\\appointmentthienttt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{75E468DE-3A48-49FC-BBAD-1D36DEDD1515}|HIV_CARE.Repositories.ThienTTT\\HIV_CARE.Repositories.ThienTTT.csproj|solutionrelative:hiv_care.repositories.thienttt\\models\\appointmentthienttt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75E468DE-3A48-49FC-BBAD-1D36DEDD1515}|HIV_CARE.Repositories.ThienTTT\\HIV_CARE.Repositories.ThienTTT.csproj|c:\\fpt\\prn232\\sauce\\asm2\\su25_prn232_se1725_asm2_se182476_thienttt\\hiv_care.repositories.thienttt\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{75E468DE-3A48-49FC-BBAD-1D36DEDD1515}|HIV_CARE.Repositories.ThienTTT\\HIV_CARE.Repositories.ThienTTT.csproj|solutionrelative:hiv_care.repositories.thienttt\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7AC667D-5B8B-4AA5-9E90-4133C09FEF96}|HIV_CARE.GraphQLAPIServices.ThienTTT\\HIV_CARE.GraphQLAPIServices.ThienTTT.csproj|c:\\fpt\\prn232\\sauce\\asm2\\su25_prn232_se1725_asm2_se182476_thienttt\\hiv_care.graphqlapiservices.thienttt\\graphqls\\mutations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7AC667D-5B8B-4AA5-9E90-4133C09FEF96}|HIV_CARE.GraphQLAPIServices.ThienTTT\\HIV_CARE.GraphQLAPIServices.ThienTTT.csproj|solutionrelative:hiv_care.graphqlapiservices.thienttt\\graphqls\\mutations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0182674E-B9FA-4A2C-BD99-259EB3CC2AD9}|HIV_CARE.GraphQLClients.BlazorWAS.ThienTTT\\HIV_CARE.GraphQLClients.BlazorWAS.ThienTTT.csproj|c:\\fpt\\prn232\\sauce\\asm2\\su25_prn232_se1725_asm2_se182476_thienttt\\hiv_care.graphqlclients.blazorwas.thienttt\\wwwroot\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{0182674E-B9FA-4A2C-BD99-259EB3CC2AD9}|HIV_CARE.GraphQLClients.BlazorWAS.ThienTTT\\HIV_CARE.GraphQLClients.BlazorWAS.ThienTTT.csproj|solutionrelative:hiv_care.graphqlclients.blazorwas.thienttt\\wwwroot\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0182674E-B9FA-4A2C-BD99-259EB3CC2AD9}|HIV_CARE.GraphQLClients.BlazorWAS.ThienTTT\\HIV_CARE.GraphQLClients.BlazorWAS.ThienTTT.csproj|c:\\fpt\\prn232\\sauce\\asm2\\su25_prn232_se1725_asm2_se182476_thienttt\\hiv_care.graphqlclients.blazorwas.thienttt\\pages\\appointmentthienttts\\appointmentthientttlist.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -23,20 +43,28 @@
       "RelativeMoniker": "D:0:0:{0182674E-B9FA-4A2C-BD99-259EB3CC2AD9}|HIV_CARE.GraphQLClients.BlazorWAS.ThienTTT\\HIV_CARE.GraphQLClients.BlazorWAS.ThienTTT.csproj|solutionrelative:hiv_care.graphqlclients.blazorwas.thienttt\\pages\\appointmentthienttts\\appointmentthientttdetail.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0182674E-B9FA-4A2C-BD99-259EB3CC2AD9}|HIV_CARE.GraphQLClients.BlazorWAS.ThienTTT\\HIV_CARE.GraphQLClients.BlazorWAS.ThienTTT.csproj|c:\\fpt\\prn232\\sauce\\asm2\\su25_prn232_se1725_asm2_se182476_thienttt\\hiv_care.graphqlclients.blazorwas.thienttt\\pages\\appointmentthienttts\\appointmentthientttform.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{0182674E-B9FA-4A2C-BD99-259EB3CC2AD9}|HIV_CARE.GraphQLClients.BlazorWAS.ThienTTT\\HIV_CARE.GraphQLClients.BlazorWAS.ThienTTT.csproj|solutionrelative:hiv_care.graphqlclients.blazorwas.thienttt\\pages\\appointmentthienttts\\appointmentthientttform.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{B7AC667D-5B8B-4AA5-9E90-4133C09FEF96}|HIV_CARE.GraphQLAPIServices.ThienTTT\\HIV_CARE.GraphQLAPIServices.ThienTTT.csproj|c:\\fpt\\prn232\\sauce\\asm2\\su25_prn232_se1725_asm2_se182476_thienttt\\hiv_care.graphqlapiservices.thienttt\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7AC667D-5B8B-4AA5-9E90-4133C09FEF96}|HIV_CARE.GraphQLAPIServices.ThienTTT\\HIV_CARE.GraphQLAPIServices.ThienTTT.csproj|solutionrelative:hiv_care.graphqlapiservices.thienttt\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D72D2558-BECF-4913-8ACD-639E88EFE9CE}|HIV_CARE.Services.ThienTTT\\HIV_CARE.Services.ThienTTT.csproj|c:\\fpt\\prn232\\sauce\\asm2\\su25_prn232_se1725_asm2_se182476_thienttt\\hiv_care.services.thienttt\\serviceproviders.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D72D2558-BECF-4913-8ACD-639E88EFE9CE}|HIV_CARE.Services.ThienTTT\\HIV_CARE.Services.ThienTTT.csproj|solutionrelative:hiv_care.services.thienttt\\serviceproviders.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D72D2558-BECF-4913-8ACD-639E88EFE9CE}|HIV_CARE.Services.ThienTTT\\HIV_CARE.Services.ThienTTT.csproj|c:\\fpt\\prn232\\sauce\\asm2\\su25_prn232_se1725_asm2_se182476_thienttt\\hiv_care.services.thienttt\\doctornhservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D72D2558-BECF-4913-8ACD-639E88EFE9CE}|HIV_CARE.Services.ThienTTT\\HIV_CARE.Services.ThienTTT.csproj|solutionrelative:hiv_care.services.thienttt\\doctornhservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0182674E-B9FA-4A2C-BD99-259EB3CC2AD9}|HIV_CARE.GraphQLClients.BlazorWAS.ThienTTT\\HIV_CARE.GraphQLClients.BlazorWAS.ThienTTT.csproj|c:\\fpt\\prn232\\sauce\\asm2\\su25_prn232_se1725_asm2_se182476_thienttt\\hiv_care.graphqlclients.blazorwas.thienttt\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0182674E-B9FA-4A2C-BD99-259EB3CC2AD9}|HIV_CARE.GraphQLClients.BlazorWAS.ThienTTT\\HIV_CARE.GraphQLClients.BlazorWAS.ThienTTT.csproj|solutionrelative:hiv_care.graphqlclients.blazorwas.thienttt\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B7AC667D-5B8B-4AA5-9E90-4133C09FEF96}|HIV_CARE.GraphQLAPIServices.ThienTTT\\HIV_CARE.GraphQLAPIServices.ThienTTT.csproj|c:\\fpt\\prn232\\sauce\\asm2\\su25_prn232_se1725_asm2_se182476_thienttt\\hiv_care.graphqlapiservices.thienttt\\graphqls\\mutations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B7AC667D-5B8B-4AA5-9E90-4133C09FEF96}|HIV_CARE.GraphQLAPIServices.ThienTTT\\HIV_CARE.GraphQLAPIServices.ThienTTT.csproj|solutionrelative:hiv_care.graphqlapiservices.thienttt\\graphqls\\mutations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D72D2558-BECF-4913-8ACD-639E88EFE9CE}|HIV_CARE.Services.ThienTTT\\HIV_CARE.Services.ThienTTT.csproj|c:\\fpt\\prn232\\sauce\\asm2\\su25_prn232_se1725_asm2_se182476_thienttt\\hiv_care.services.thienttt\\appointmentthientttservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D72D2558-BECF-4913-8ACD-639E88EFE9CE}|HIV_CARE.Services.ThienTTT\\HIV_CARE.Services.ThienTTT.csproj|solutionrelative:hiv_care.services.thienttt\\appointmentthientttservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B7AC667D-5B8B-4AA5-9E90-4133C09FEF96}|HIV_CARE.GraphQLAPIServices.ThienTTT\\HIV_CARE.GraphQLAPIServices.ThienTTT.csproj|c:\\fpt\\prn232\\sauce\\asm2\\su25_prn232_se1725_asm2_se182476_thienttt\\hiv_care.graphqlapiservices.thienttt\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B7AC667D-5B8B-4AA5-9E90-4133C09FEF96}|HIV_CARE.GraphQLAPIServices.ThienTTT\\HIV_CARE.GraphQLAPIServices.ThienTTT.csproj|solutionrelative:hiv_care.graphqlapiservices.thienttt\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0182674E-B9FA-4A2C-BD99-259EB3CC2AD9}|HIV_CARE.GraphQLClients.BlazorWAS.ThienTTT\\HIV_CARE.GraphQLClients.BlazorWAS.ThienTTT.csproj|c:\\fpt\\prn232\\sauce\\asm2\\su25_prn232_se1725_asm2_se182476_thienttt\\hiv_care.graphqlclients.blazorwas.thienttt\\pages\\appointmentthienttts\\appointmentthientttform.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0182674E-B9FA-4A2C-BD99-259EB3CC2AD9}|HIV_CARE.GraphQLClients.BlazorWAS.ThienTTT\\HIV_CARE.GraphQLClients.BlazorWAS.ThienTTT.csproj|solutionrelative:hiv_care.graphqlclients.blazorwas.thienttt\\pages\\appointmentthienttts\\appointmentthientttform.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0182674E-B9FA-4A2C-BD99-259EB3CC2AD9}|HIV_CARE.GraphQLClients.BlazorWAS.ThienTTT\\HIV_CARE.GraphQLClients.BlazorWAS.ThienTTT.csproj|c:\\fpt\\prn232\\sauce\\asm2\\su25_prn232_se1725_asm2_se182476_thienttt\\hiv_care.graphqlclients.blazorwas.thienttt\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -45,10 +73,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{0182674E-B9FA-4A2C-BD99-259EB3CC2AD9}|HIV_CARE.GraphQLClients.BlazorWAS.ThienTTT\\HIV_CARE.GraphQLClients.BlazorWAS.ThienTTT.csproj|c:\\fpt\\prn232\\sauce\\asm2\\su25_prn232_se1725_asm2_se182476_thienttt\\hiv_care.graphqlclients.blazorwas.thienttt\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{0182674E-B9FA-4A2C-BD99-259EB3CC2AD9}|HIV_CARE.GraphQLClients.BlazorWAS.ThienTTT\\HIV_CARE.GraphQLClients.BlazorWAS.ThienTTT.csproj|solutionrelative:hiv_care.graphqlclients.blazorwas.thienttt\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0182674E-B9FA-4A2C-BD99-259EB3CC2AD9}|HIV_CARE.GraphQLClients.BlazorWAS.ThienTTT\\HIV_CARE.GraphQLClients.BlazorWAS.ThienTTT.csproj|c:\\fpt\\prn232\\sauce\\asm2\\su25_prn232_se1725_asm2_se182476_thienttt\\hiv_care.graphqlclients.blazorwas.thienttt\\wwwroot\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{0182674E-B9FA-4A2C-BD99-259EB3CC2AD9}|HIV_CARE.GraphQLClients.BlazorWAS.ThienTTT\\HIV_CARE.GraphQLClients.BlazorWAS.ThienTTT.csproj|solutionrelative:hiv_care.graphqlclients.blazorwas.thienttt\\wwwroot\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0182674E-B9FA-4A2C-BD99-259EB3CC2AD9}|HIV_CARE.GraphQLClients.BlazorWAS.ThienTTT\\HIV_CARE.GraphQLClients.BlazorWAS.ThienTTT.csproj|c:\\fpt\\prn232\\sauce\\asm2\\su25_prn232_se1725_asm2_se182476_thienttt\\hiv_care.graphqlclients.blazorwas.thienttt\\models\\class.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -67,10 +91,6 @@
       "RelativeMoniker": "D:0:0:{0182674E-B9FA-4A2C-BD99-259EB3CC2AD9}|HIV_CARE.GraphQLClients.BlazorWAS.ThienTTT\\HIV_CARE.GraphQLClients.BlazorWAS.ThienTTT.csproj|solutionrelative:hiv_care.graphqlclients.blazorwas.thienttt\\models\\systemuseraccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{75E468DE-3A48-49FC-BBAD-1D36DEDD1515}|HIV_CARE.Repositories.ThienTTT\\HIV_CARE.Repositories.ThienTTT.csproj|c:\\fpt\\prn232\\sauce\\asm2\\su25_prn232_se1725_asm2_se182476_thienttt\\hiv_care.repositories.thienttt\\models\\appointmentthienttt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{75E468DE-3A48-49FC-BBAD-1D36DEDD1515}|HIV_CARE.Repositories.ThienTTT\\HIV_CARE.Repositories.ThienTTT.csproj|solutionrelative:hiv_care.repositories.thienttt\\models\\appointmentthienttt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{75E468DE-3A48-49FC-BBAD-1D36DEDD1515}|HIV_CARE.Repositories.ThienTTT\\HIV_CARE.Repositories.ThienTTT.csproj|c:\\fpt\\prn232\\sauce\\asm2\\su25_prn232_se1725_asm2_se182476_thienttt\\hiv_care.repositories.thienttt\\basic\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{75E468DE-3A48-49FC-BBAD-1D36DEDD1515}|HIV_CARE.Repositories.ThienTTT\\HIV_CARE.Repositories.ThienTTT.csproj|solutionrelative:hiv_care.repositories.thienttt\\basic\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -82,7 +102,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 15,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Bookmark",
@@ -102,33 +122,98 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
+              "Title": "UnitOfWork.cs",
+              "DocumentMoniker": "C:\\FPT\\PRN232\\Sauce\\ASM2\\SU25_PRN232_SE1725_ASM2_SE182476_ThienTTT\\HIV_CARE.Repositories.ThienTTT\\UnitOfWork.cs",
+              "RelativeDocumentMoniker": "HIV_CARE.Repositories.ThienTTT\\UnitOfWork.cs",
+              "ToolTip": "C:\\FPT\\PRN232\\Sauce\\ASM2\\SU25_PRN232_SE1725_ASM2_SE182476_ThienTTT\\HIV_CARE.Repositories.ThienTTT\\UnitOfWork.cs",
+              "RelativeToolTip": "HIV_CARE.Repositories.ThienTTT\\UnitOfWork.cs",
+              "ViewState": "AQIAAEcAAAAAAAAAAAAswFwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-25T03:34:34.115Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "DoctorNhService.cs",
+              "DocumentMoniker": "C:\\FPT\\PRN232\\Sauce\\ASM2\\SU25_PRN232_SE1725_ASM2_SE182476_ThienTTT\\HIV_CARE.Services.ThienTTT\\DoctorNhService.cs",
+              "RelativeDocumentMoniker": "HIV_CARE.Services.ThienTTT\\DoctorNhService.cs",
+              "ToolTip": "C:\\FPT\\PRN232\\Sauce\\ASM2\\SU25_PRN232_SE1725_ASM2_SE182476_ThienTTT\\HIV_CARE.Services.ThienTTT\\DoctorNhService.cs",
+              "RelativeToolTip": "HIV_CARE.Services.ThienTTT\\DoctorNhService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-25T03:34:46.398Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IAppointmentThienTttService.cs",
+              "DocumentMoniker": "C:\\FPT\\PRN232\\Sauce\\ASM2\\SU25_PRN232_SE1725_ASM2_SE182476_ThienTTT\\HIV_CARE.Services.ThienTTT\\IAppointmentThienTttService.cs",
+              "RelativeDocumentMoniker": "HIV_CARE.Services.ThienTTT\\IAppointmentThienTttService.cs",
+              "ToolTip": "C:\\FPT\\PRN232\\Sauce\\ASM2\\SU25_PRN232_SE1725_ASM2_SE182476_ThienTTT\\HIV_CARE.Services.ThienTTT\\IAppointmentThienTttService.cs",
+              "RelativeToolTip": "HIV_CARE.Services.ThienTTT\\IAppointmentThienTttService.cs",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAnwAsAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-25T03:34:45.843Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ServiceProviders.cs",
+              "DocumentMoniker": "C:\\FPT\\PRN232\\Sauce\\ASM2\\SU25_PRN232_SE1725_ASM2_SE182476_ThienTTT\\HIV_CARE.Services.ThienTTT\\ServiceProviders.cs",
+              "RelativeDocumentMoniker": "HIV_CARE.Services.ThienTTT\\ServiceProviders.cs",
+              "ToolTip": "C:\\FPT\\PRN232\\Sauce\\ASM2\\SU25_PRN232_SE1725_ASM2_SE182476_ThienTTT\\HIV_CARE.Services.ThienTTT\\ServiceProviders.cs",
+              "RelativeToolTip": "HIV_CARE.Services.ThienTTT\\ServiceProviders.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAA7wAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-25T03:34:39.74Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "AppointmentThienTttService.cs",
+              "DocumentMoniker": "C:\\FPT\\PRN232\\Sauce\\ASM2\\SU25_PRN232_SE1725_ASM2_SE182476_ThienTTT\\HIV_CARE.Services.ThienTTT\\AppointmentThienTttService.cs",
+              "RelativeDocumentMoniker": "HIV_CARE.Services.ThienTTT\\AppointmentThienTttService.cs",
+              "ToolTip": "C:\\FPT\\PRN232\\Sauce\\ASM2\\SU25_PRN232_SE1725_ASM2_SE182476_ThienTTT\\HIV_CARE.Services.ThienTTT\\AppointmentThienTttService.cs",
+              "RelativeToolTip": "HIV_CARE.Services.ThienTTT\\AppointmentThienTttService.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-25T03:29:12.371Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "Queries.cs",
               "DocumentMoniker": "C:\\FPT\\PRN232\\Sauce\\ASM2\\SU25_PRN232_SE1725_ASM2_SE182476_ThienTTT\\HIV_CARE.GraphQLAPIServices.ThienTTT\\GraphQLs\\Queries.cs",
               "RelativeDocumentMoniker": "HIV_CARE.GraphQLAPIServices.ThienTTT\\GraphQLs\\Queries.cs",
               "ToolTip": "C:\\FPT\\PRN232\\Sauce\\ASM2\\SU25_PRN232_SE1725_ASM2_SE182476_ThienTTT\\HIV_CARE.GraphQLAPIServices.ThienTTT\\GraphQLs\\Queries.cs",
               "RelativeToolTip": "HIV_CARE.GraphQLAPIServices.ThienTTT\\GraphQLs\\Queries.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAIA6wA0AAAA1AAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAA8AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-21T09:42:16.009Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\FPT\\PRN232\\Sauce\\ASM2\\SU25_PRN232_SE1725_ASM2_SE182476_ThienTTT\\HIV_CARE.GraphQLAPIServices.ThienTTT\\Program.cs",
               "RelativeDocumentMoniker": "HIV_CARE.GraphQLAPIServices.ThienTTT\\Program.cs",
               "ToolTip": "C:\\FPT\\PRN232\\Sauce\\ASM2\\SU25_PRN232_SE1725_ASM2_SE182476_ThienTTT\\HIV_CARE.GraphQLAPIServices.ThienTTT\\Program.cs",
               "RelativeToolTip": "HIV_CARE.GraphQLAPIServices.ThienTTT\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACQAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-18T10:22:14.309Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 19,
               "Title": "_Imports.razor",
               "DocumentMoniker": "C:\\FPT\\PRN232\\Sauce\\ASM2\\SU25_PRN232_SE1725_ASM2_SE182476_ThienTTT\\HIV_CARE.GraphQLClients.BlazorWAS.ThienTTT\\_Imports.razor",
               "RelativeDocumentMoniker": "HIV_CARE.GraphQLClients.BlazorWAS.ThienTTT\\_Imports.razor",
@@ -140,7 +225,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 17,
               "Title": "MainLayout.razor",
               "DocumentMoniker": "C:\\FPT\\PRN232\\Sauce\\ASM2\\SU25_PRN232_SE1725_ASM2_SE182476_ThienTTT\\HIV_CARE.GraphQLClients.BlazorWAS.ThienTTT\\Layout\\MainLayout.razor",
               "RelativeDocumentMoniker": "HIV_CARE.GraphQLClients.BlazorWAS.ThienTTT\\Layout\\MainLayout.razor",
@@ -148,12 +233,11 @@
               "RelativeToolTip": "HIV_CARE.GraphQLClients.BlazorWAS.ThienTTT\\Layout\\MainLayout.razor",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-18T10:03:54.802Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-18T10:03:54.802Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 16,
               "Title": "NavMenu.razor",
               "DocumentMoniker": "C:\\FPT\\PRN232\\Sauce\\ASM2\\SU25_PRN232_SE1725_ASM2_SE182476_ThienTTT\\HIV_CARE.GraphQLClients.BlazorWAS.ThienTTT\\Layout\\NavMenu.razor",
               "RelativeDocumentMoniker": "HIV_CARE.GraphQLClients.BlazorWAS.ThienTTT\\Layout\\NavMenu.razor",
@@ -161,25 +245,24 @@
               "RelativeToolTip": "HIV_CARE.GraphQLClients.BlazorWAS.ThienTTT\\Layout\\NavMenu.razor",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-18T09:54:07.765Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-18T09:54:07.765Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 8,
               "Title": "AppointmentThienTttList.razor",
               "DocumentMoniker": "C:\\FPT\\PRN232\\Sauce\\ASM2\\SU25_PRN232_SE1725_ASM2_SE182476_ThienTTT\\HIV_CARE.GraphQLClients.BlazorWAS.ThienTTT\\Pages\\AppointmentThienTtts\\AppointmentThienTttList.razor",
               "RelativeDocumentMoniker": "HIV_CARE.GraphQLClients.BlazorWAS.ThienTTT\\Pages\\AppointmentThienTtts\\AppointmentThienTttList.razor",
               "ToolTip": "C:\\FPT\\PRN232\\Sauce\\ASM2\\SU25_PRN232_SE1725_ASM2_SE182476_ThienTTT\\HIV_CARE.GraphQLClients.BlazorWAS.ThienTTT\\Pages\\AppointmentThienTtts\\AppointmentThienTttList.razor",
               "RelativeToolTip": "HIV_CARE.GraphQLClients.BlazorWAS.ThienTTT\\Pages\\AppointmentThienTtts\\AppointmentThienTttList.razor",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEcAAAAcAAAA",
+              "ViewState": "AQIAAB0AAAAAAAAAAAAiwCkAAABeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-06-18T09:53:50.84Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 9,
               "Title": "AppointmentThienTttDetail.razor",
               "DocumentMoniker": "C:\\FPT\\PRN232\\Sauce\\ASM2\\SU25_PRN232_SE1725_ASM2_SE182476_ThienTTT\\HIV_CARE.GraphQLClients.BlazorWAS.ThienTTT\\Pages\\AppointmentThienTtts\\AppointmentThienTttDetail.razor",
               "RelativeDocumentMoniker": "HIV_CARE.GraphQLClients.BlazorWAS.ThienTTT\\Pages\\AppointmentThienTtts\\AppointmentThienTttDetail.razor",
@@ -192,7 +275,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 15,
               "Title": "AppointmentThienTttForm.razor",
               "DocumentMoniker": "C:\\FPT\\PRN232\\Sauce\\ASM2\\SU25_PRN232_SE1725_ASM2_SE182476_ThienTTT\\HIV_CARE.GraphQLClients.BlazorWAS.ThienTTT\\Pages\\AppointmentThienTtts\\AppointmentThienTttForm.razor",
               "RelativeDocumentMoniker": "HIV_CARE.GraphQLClients.BlazorWAS.ThienTTT\\Pages\\AppointmentThienTtts\\AppointmentThienTttForm.razor",
@@ -200,24 +283,24 @@
               "RelativeToolTip": "HIV_CARE.GraphQLClients.BlazorWAS.ThienTTT\\Pages\\AppointmentThienTtts\\AppointmentThienTttForm.razor",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-18T09:53:17.801Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-18T09:53:17.801Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 7,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\FPT\\PRN232\\Sauce\\ASM2\\SU25_PRN232_SE1725_ASM2_SE182476_ThienTTT\\HIV_CARE.GraphQLClients.BlazorWAS.ThienTTT\\wwwroot\\appsettings.json",
               "RelativeDocumentMoniker": "HIV_CARE.GraphQLClients.BlazorWAS.ThienTTT\\wwwroot\\appsettings.json",
               "ToolTip": "C:\\FPT\\PRN232\\Sauce\\ASM2\\SU25_PRN232_SE1725_ASM2_SE182476_ThienTTT\\HIV_CARE.GraphQLClients.BlazorWAS.ThienTTT\\wwwroot\\appsettings.json",
               "RelativeToolTip": "HIV_CARE.GraphQLClients.BlazorWAS.ThienTTT\\wwwroot\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-06-18T09:27:20.356Z"
+              "WhenOpened": "2025-06-18T09:27:20.356Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 21,
               "Title": "SystemUserAccount.cs",
               "DocumentMoniker": "C:\\FPT\\PRN232\\Sauce\\ASM2\\SU25_PRN232_SE1725_ASM2_SE182476_ThienTTT\\HIV_CARE.GraphQLClients.BlazorWAS.ThienTTT\\Models\\SystemUserAccount.cs",
               "RelativeDocumentMoniker": "HIV_CARE.GraphQLClients.BlazorWAS.ThienTTT\\Models\\SystemUserAccount.cs",
@@ -229,7 +312,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 20,
               "Title": "DoctorPhatNh.cs",
               "DocumentMoniker": "C:\\FPT\\PRN232\\Sauce\\ASM2\\SU25_PRN232_SE1725_ASM2_SE182476_ThienTTT\\HIV_CARE.GraphQLClients.BlazorWAS.ThienTTT\\Models\\DoctorPhatNh.cs",
               "RelativeDocumentMoniker": "HIV_CARE.GraphQLClients.BlazorWAS.ThienTTT\\Models\\DoctorPhatNh.cs",
@@ -241,20 +324,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "AppointmentThienTtt.cs",
               "DocumentMoniker": "C:\\FPT\\PRN232\\Sauce\\ASM2\\SU25_PRN232_SE1725_ASM2_SE182476_ThienTTT\\HIV_CARE.GraphQLClients.BlazorWAS.ThienTTT\\Models\\AppointmentThienTtt.cs",
               "RelativeDocumentMoniker": "HIV_CARE.GraphQLClients.BlazorWAS.ThienTTT\\Models\\AppointmentThienTtt.cs",
               "ToolTip": "C:\\FPT\\PRN232\\Sauce\\ASM2\\SU25_PRN232_SE1725_ASM2_SE182476_ThienTTT\\HIV_CARE.GraphQLClients.BlazorWAS.ThienTTT\\Models\\AppointmentThienTtt.cs",
               "RelativeToolTip": "HIV_CARE.GraphQLClients.BlazorWAS.ThienTTT\\Models\\AppointmentThienTtt.cs",
-              "ViewState": "AQIAACcAAAAAAAAAAAAjwEMAAAAFAAAA",
+              "ViewState": "AQIAACcAAAAAAAAAAAAewC4AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-18T09:24:23.43Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 18,
               "Title": "Class.cs",
               "DocumentMoniker": "C:\\FPT\\PRN232\\Sauce\\ASM2\\SU25_PRN232_SE1725_ASM2_SE182476_ThienTTT\\HIV_CARE.GraphQLClients.BlazorWAS.ThienTTT\\Models\\Class.cs",
               "RelativeDocumentMoniker": "HIV_CARE.GraphQLClients.BlazorWAS.ThienTTT\\Models\\Class.cs",
@@ -266,32 +349,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 4,
               "Title": "AppointmentThienTtt.cs",
               "DocumentMoniker": "C:\\FPT\\PRN232\\Sauce\\ASM2\\SU25_PRN232_SE1725_ASM2_SE182476_ThienTTT\\HIV_CARE.Repositories.ThienTTT\\Models\\AppointmentThienTtt.cs",
               "RelativeDocumentMoniker": "HIV_CARE.Repositories.ThienTTT\\Models\\AppointmentThienTtt.cs",
               "ToolTip": "C:\\FPT\\PRN232\\Sauce\\ASM2\\SU25_PRN232_SE1725_ASM2_SE182476_ThienTTT\\HIV_CARE.Repositories.ThienTTT\\Models\\AppointmentThienTtt.cs",
               "RelativeToolTip": "HIV_CARE.Repositories.ThienTTT\\Models\\AppointmentThienTtt.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAACMAAAAAAAAAAAAmwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-18T09:22:59.047Z"
+              "WhenOpened": "2025-06-18T09:22:59.047Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "GraphQLConsumer.cs",
               "DocumentMoniker": "C:\\FPT\\PRN232\\Sauce\\ASM2\\SU25_PRN232_SE1725_ASM2_SE182476_ThienTTT\\HIV_CARE.GraphQLClients.BlazorWAS.ThienTTT\\GraphQlClients\\GraphQLConsumer.cs",
               "RelativeDocumentMoniker": "HIV_CARE.GraphQLClients.BlazorWAS.ThienTTT\\GraphQlClients\\GraphQLConsumer.cs",
               "ToolTip": "C:\\FPT\\PRN232\\Sauce\\ASM2\\SU25_PRN232_SE1725_ASM2_SE182476_ThienTTT\\HIV_CARE.GraphQLClients.BlazorWAS.ThienTTT\\GraphQlClients\\GraphQLConsumer.cs",
               "RelativeToolTip": "HIV_CARE.GraphQLClients.BlazorWAS.ThienTTT\\GraphQlClients\\GraphQLConsumer.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAAAcwB8AAABmAAAA",
+              "ViewState": "AQIAACcAAAAAAAAAAAAvwDAAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-18T09:16:05.472Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 13,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\FPT\\PRN232\\Sauce\\ASM2\\SU25_PRN232_SE1725_ASM2_SE182476_ThienTTT\\HIV_CARE.GraphQLClients.BlazorWAS.ThienTTT\\Program.cs",
               "RelativeDocumentMoniker": "HIV_CARE.GraphQLClients.BlazorWAS.ThienTTT\\Program.cs",
@@ -304,7 +388,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 22,
               "Title": "GenericRepository.cs",
               "DocumentMoniker": "C:\\FPT\\PRN232\\Sauce\\ASM2\\SU25_PRN232_SE1725_ASM2_SE182476_ThienTTT\\HIV_CARE.Repositories.ThienTTT\\Basic\\GenericRepository.cs",
               "RelativeDocumentMoniker": "HIV_CARE.Repositories.ThienTTT\\Basic\\GenericRepository.cs",
@@ -317,13 +401,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 6,
               "Title": "Mutations.cs",
               "DocumentMoniker": "C:\\FPT\\PRN232\\Sauce\\ASM2\\SU25_PRN232_SE1725_ASM2_SE182476_ThienTTT\\HIV_CARE.GraphQLAPIServices.ThienTTT\\GraphQLs\\Mutations.cs",
               "RelativeDocumentMoniker": "HIV_CARE.GraphQLAPIServices.ThienTTT\\GraphQLs\\Mutations.cs",
               "ToolTip": "C:\\FPT\\PRN232\\Sauce\\ASM2\\SU25_PRN232_SE1725_ASM2_SE182476_ThienTTT\\HIV_CARE.GraphQLAPIServices.ThienTTT\\GraphQLs\\Mutations.cs",
               "RelativeToolTip": "HIV_CARE.GraphQLAPIServices.ThienTTT\\GraphQLs\\Mutations.cs",
-              "ViewState": "AQIAACgAAAAAAAAAAAAQwD0AAAAAAAAA",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAkwD0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-18T08:43:24.082Z",
               "EditorCaption": ""

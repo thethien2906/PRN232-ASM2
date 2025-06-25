@@ -35,6 +35,7 @@ C:\FPT\PRN232\Sauce\ASM2\SU25_PRN232_SE1725_ASM2_SE182476_ThienTTT\HIV_CARE.Repo
 C:\FPT\PRN232\Sauce\ASM2\SU25_PRN232_SE1725_ASM2_SE182476_ThienTTT\HIV_CARE.Repositories.ThienTTT\obj\Debug\net8.0\HIV_CARE.Repositories.ThienTTT.AssemblyInfoInputs.cache
 C:\FPT\PRN232\Sauce\ASM2\SU25_PRN232_SE1725_ASM2_SE182476_ThienTTT\HIV_CARE.Repositories.ThienTTT\obj\Debug\net8.0\HIV_CARE.Repositories.ThienTTT.AssemblyInfo.cs
 C:\FPT\PRN232\Sauce\ASM2\SU25_PRN232_SE1725_ASM2_SE182476_ThienTTT\HIV_CARE.Repositories.ThienTTT\obj\Debug\net8.0\HIV_CARE.Repositories.ThienTTT.csproj.CoreCompileInputs.cache
+C:\FPT\PRN232\Sauce\ASM2\SU25_PRN232_SE1725_ASM2_SE182476_ThienTTT\HIV_CARE.Repositories.ThienTTT\obj\Debug\net8.0\HIV_CARE.Repositories.ThienTTT.sourcelink.json
 C:\FPT\PRN232\Sauce\ASM2\SU25_PRN232_SE1725_ASM2_SE182476_ThienTTT\HIV_CARE.Repositories.ThienTTT\obj\Debug\net8.0\HIV_CARE.Repositories.ThienTTT.dll
 C:\FPT\PRN232\Sauce\ASM2\SU25_PRN232_SE1725_ASM2_SE182476_ThienTTT\HIV_CARE.Repositories.ThienTTT\obj\Debug\net8.0\refint\HIV_CARE.Repositories.ThienTTT.dll
 C:\FPT\PRN232\Sauce\ASM2\SU25_PRN232_SE1725_ASM2_SE182476_ThienTTT\HIV_CARE.Repositories.ThienTTT\obj\Debug\net8.0\HIV_CARE.Repositories.ThienTTT.pdb

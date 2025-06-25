@@ -34,11 +34,11 @@ namespace HIV_CARE.Repositories.ThienTTT
         }
         public AppointmentThienTttRepository AppointmentThienTttRepository
         {
-            get { return _appointmentThienTttRepository ??= new AppointmentThienTttRepository(); }
+            get { return _appointmentThienTttRepository ??= new AppointmentThienTttRepository(_context); }
         }
         public DoctorPhatNhRepository DoctorPhatNhRepository
         {
-            get { return _doctorPhatNhRepository ??= new DoctorPhatNhRepository(); }
+            get { return _doctorPhatNhRepository ??= new DoctorPhatNhRepository(_context); }
         }
 
         public void Dispose() => _context.Dispose();

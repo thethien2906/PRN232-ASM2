@@ -46,12 +46,12 @@ public partial class AppointmentThienTtt
 
     public class AppointmentThienTttsGraphQLResponse
     {
-        public List<AppointmentThienTtt> getAppointmentThienTtts { get; set; }
+        public List<AppointmentThienTtt> appointmentThienTtts { get; set; }
     }
 
     public class AppointmentThienTttGraphQLResponse
     {
-        public AppointmentThienTtt getAppointmentThienTttById { get; set; }
+        public AppointmentThienTtt appointmentThienTttById { get; set; }
     }
 
     public class UpdateAppointmentThienTttGraphQLResponse

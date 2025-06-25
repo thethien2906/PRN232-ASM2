@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("HIV_CARE.Repositories.ThienTTT")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5b438049de1d9c22e96ed36cd8d98539622b3516")]
 [assembly: System.Reflection.AssemblyProductAttribute("HIV_CARE.Repositories.ThienTTT")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HIV_CARE.Repositories.ThienTTT")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

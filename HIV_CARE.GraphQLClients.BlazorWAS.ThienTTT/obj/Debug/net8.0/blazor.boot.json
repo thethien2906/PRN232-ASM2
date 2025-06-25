@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "HIV_CARE.GraphQLClients.BlazorWAS.ThienTTT",
   "resources": {
-    "hash": "sha256-Ripd6x/F7HnIHp5cvNy4C25oFPN2pAYveHepqxP6fmw=",
+    "hash": "sha256-3Uz5TxA2POyh+mkit7QQMkNrVZ8h9EZIqGostUT92Qo=",
     "jsModuleNative": {
       "dotnet.native.8.0.4.aiopl7zbcw.js": "sha256-ju0+XWE0ihz554eKEj0HQ8Opa61xpbUIaX5/MNo8we4="
     },
@@ -217,10 +217,10 @@
       "mscorlib.wasm": "sha256-VCfYgt1mcjITabSTosCDVZ+68ea3Z7kakTFaLNLG+18=",
       "netstandard.wasm": "sha256-YOZxxR9PM3Dltcijfb0Q4FD39DkWZbZ1e2ScbZDvWJ4=",
       "System.Private.CoreLib.wasm": "sha256-NrT1QkAzVU//2wgK9vXdq77lCGvLJ4IOZ+Aegesyanc=",
-      "HIV_CARE.GraphQLClients.BlazorWAS.ThienTTT.wasm": "sha256-HgwxkX83DE0VQJ6p0eSOQpKjMUD/1g14CHiuGiJTdwg="
+      "HIV_CARE.GraphQLClients.BlazorWAS.ThienTTT.wasm": "sha256-yG6gZalCkF2f4KQfTtIRC4CRU0ZhnPnZx7KUy49+hg8="
     },
     "pdb": {
-      "HIV_CARE.GraphQLClients.BlazorWAS.ThienTTT.pdb": "sha256-aG++ZI7/y5YAFwPM4L4oZXdZyKRE/psUW9c2v55ukjk="
+      "HIV_CARE.GraphQLClients.BlazorWAS.ThienTTT.pdb": "sha256-SZ5BWSlTJDcMinhZjiIN0reLEZtWeJOKAJhQf5rriNA="
     }
   },
   "cacheBootResources": true,

@@ -2,8 +2,7 @@
 using GraphQL.Client.Abstractions;
 using HIV_CARE.GraphQLClients.BlazorWAS.ThienTTT.Models;
 using static HIV_CARE.GraphQLClients.BlazorWAS.ThienTTT.Models.AppointmentThienTtt;
-// This using statement was a bit confusing. It's cleaner to qualify the nested classes when you use them.
-// using static HIV_CARE.GraphQLClients.BlazorWAS.ThienTTT.Models.AppointmentThienTtt;
+
 
 namespace HIV_CARE.GraphQLClients.BlazorWAS.ThienTTT.GraphQlClients
 {
@@ -16,22 +15,28 @@ namespace HIV_CARE.GraphQLClients.BlazorWAS.ThienTTT.GraphQlClients
         {
             try
             {
-                var query = @"query GetAppointmentThienTtts {
-                                getAppointmentThienTtts {
-                                    appointmentsThienTttid
-                                    patientName
-                                    appointmentDate
-                                    appointmentTime
-                                    consultationType
-                                    priority
-                                    totalFee
-                                    status
-                                }
-                            }";
+                var query = @"query getAppointmentThienTtts {
+                        appointmentThienTtts {
+                            appointmentsThienTttid
+                            doctorsPhatNhid
+                            patientName
+                            appointmentDate
+                            appointmentTime
+                            estimatedDuration
+                            consultationType
+                            priority
+                            isConfirmed
+                            isCompleted
+                            isAnonymous
+                            totalFee  
+                            status    
+                        }
+                    }";
 
+                // This part is now correct because your model is fixed!
                 var response = await _graphQLClient.SendQueryAsync<AppointmentThienTttsGraphQLResponse>(query);
 
-                return response?.Data?.getAppointmentThienTtts ?? new List<AppointmentThienTtt>();
+                return response?.Data?.appointmentThienTtts ?? new List<AppointmentThienTtt>();
             }
             catch (Exception ex)
             {
@@ -47,7 +52,7 @@ namespace HIV_CARE.GraphQLClients.BlazorWAS.ThienTTT.GraphQlClients
                 var graphQLRequest = new GraphQLRequest
                 {
                     Query = @"query GetAppointmentThienTttById($id: Int!) {
-                                getAppointmentThienTttById(id: $id) {
+                                appointmentThienTttById(id: $id) {
                                     appointmentsThienTttid
                                     doctorsPhatNhid
                                     patientName
@@ -73,7 +78,7 @@ namespace HIV_CARE.GraphQLClients.BlazorWAS.ThienTTT.GraphQlClients
 
                 var response = await _graphQLClient.SendQueryAsync<AppointmentThienTttGraphQLResponse>(graphQLRequest);
 
-                return response?.Data?.getAppointmentThienTttById;
+                return response?.Data?.appointmentThienTttById;
             }
             catch (Exception ex)
             {
